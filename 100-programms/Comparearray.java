@@ -23,7 +23,7 @@ class Laptop implements Comparable<Laptop> {
 }
 
 
-public class Compareinarraylist {
+public class Comparearray {
 
 	public static void main(String[] args) {
 		
@@ -57,7 +57,7 @@ public class Compareinarraylist {
 }
 /*
 output
-PS C:\exercise\100programms> java Compareinarraylist      
+PS C:\exercise\100programms> java Comparearray     
 Toshiba 8 55000.0
 Lenovo 32 102000.0
 HP 4 40000.0
