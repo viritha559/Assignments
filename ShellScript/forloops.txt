@@ -1,0 +1,104 @@
+example1
+$ vi for.sh
+$ cat for.sh
+#!/bin/bash
+#timestable - print out a multiplication table
+for i in 1 2 3
+do
+ for j in 1 2 3
+do
+  value='expr$i\*$j'
+  echo -n "$value"
+ done
+ echo
+done 
+$ ls -l
+total 4
+-rwxr--r-- 1 root root 154 Nov 15 12:48 for.sh
+$ ./for.sh
+expr$i\*$jexpr$i\*$jexpr$i\*$j
+expr$i\*$jexpr$i\*$jexpr$i\*$j
+expr$i\*$jexpr$i\*$jexpr$i\*$j
+
+
+example 2
+$ vi for2.sh
+$ cat for2.sh
+#!/bin/sh
+#file-poke - tell us stuff about files
+files='ls'
+for i in $files
+do
+  echo -n "$i "
+  grep $i$i
+done
+$ ls -l
+total 8
+-rwxr--r-- 1 root root 112 Nov 15 13:16 for2.sh
+-rwxr--r-- 1 root root 154 Nov 15 12:48 for.sh
+$ chmod u+x for2.sh
+$ ls -l
+total 8
+-rwxr--r-- 1 root root 112 Nov 15 13:16 for2.sh
+-rwxr--r-- 1 root root 154 Nov 15 12:48 for.sh
+$ ./for2.sh
+ls 
+
+example 3
+virit@lenovo MINGW64 ~ (master)
+$ vi for3.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ cat for3.sh
+#!/bin/sh
+# file-poke - tell us stuff about files
+for i in *; do
+   echo -n "$i"
+   grep $i $i
+done
+
+
+virit@lenovo MINGW64 ~ (master)
+$ chmod u+x for3.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ ./for3.sh
+3D Objectsgrep: Objects: No such file or directory
+grep: 3D: No such file or directory
+grep: Objects: No such file or directory
+AppDatagrep: AppData: Is a directory
+Application Datagrep: Data: No such file or directory
+grep: Application: No such file or directory
+grep: Data: No such file or directory
+Contactsgrep: Contacts: Is a directory
+Cookiesgrep: Cookies: Is a directory
+Documentsgrep: Documents: Is a directory
+Downloadsgrep: Downloads: Is a directory
+Favoritesgrep: Favorites: Is a directory
+IntelGraphicsProfilesgrep: IntelGraphicsProfiles: Is a directory
+Linksgrep: Links: Is a directory
+Local Settingsgrep: Settings: No such file or directory
+grep: Local: No such file or directory
+grep: Settings: No such file or directory
+Musicgrep: Music: Is a directory
+My Documentsgrep: Documents: Is a directory
+grep: My: No such file or directory
+grep: Documents: Is a directory
+NTUSER.DATgrep: NTUSER.DAT: Device or resource busy
+NTUSER.DAT{c4395aa4-3df2-11ec-835e-8b7946113288}.TxR.0.regtrans-msNTUSER.DAT{c4395aa4-3df2-11ec-835e-8b7946113288}.TxR.1.regtrans-msNTUSER.DAT{c4395aa4-3df2-11ec-835e-8b7946113288}.TxR.2.regtrans-msNTUSER.DAT{c4395aa4-3df2-11ec-835e-8b7946113288}.TxR.blfNTUSER.DAT{c4395aa5-3df2-11ec-835e-8b7946113288}.TM.blfNTUSER.DAT{c4395aa5-3df2-11ec-835e-8b7946113288}.TMContainer00000000000000000001.regtrans-msNTUSER.DAT{c4395aa5-3df2-11ec-835e-8b7946113288}.TMContainer00000000000000000002.regtrans-msNetHoodgrep: NetHood: Is a directory
+OneDrivegrep: OneDrive: Is a directory
+PrintHoodgrep: PrintHood: Is a directory
+Recentgrep: Recent: Is a directory
+Saved Gamesgrep: Games: No such file or directory
+grep: Saved: No such file or directory
+grep: Games: No such file or directory
+Searchesgrep: Searches: Is a directory
+SendTogrep: SendTo: Is a directory
+Start Menugrep: Menu: No such file or directory
+grep: Start: No such file or directory
+grep: Menu: No such file or directory
+Templatesgrep: Templates: Is a directory
+Videosgrep: Videos: Is a directory
+for.shfor2.bashfor2.shfor3.shntuser.dat.LOG1grep: ntuser.dat.LOG1: Device or resource busy
+ntuser.dat.LOG2grep: ntuser.dat.LOG2: Device or resource busy
+ntuser.inivirithagrep: viritha: Is a directory

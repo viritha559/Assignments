@@ -1,0 +1,88 @@
+                                                     FILES
+READ AA FILE 
+virit@lenovo MINGW64 ~ (master)
+$ vi file1.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ cat file1.sh
+#!/bin/bash
+file='basu.txt'
+while read line; do
+echo $line
+done < $file
+
+virit@lenovo MINGW64 ~ (master)
+$ chmod u+x file1.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ echo " hi my name is viritha how are you" >basu.txt
+
+virit@lenovo MINGW64 ~ (master)
+$ ./file1.sh
+hi my name is viritha how are you
+  
+
+DELETE FILE
+virit@lenovo MINGW64 ~ (master)
+$ touch suchi.txt
+
+virit@lenovo MINGW64 ~ (master)
+$ echo "hii suchi
+> how are you" > suchi.txt
+
+virit@lenovo MINGW64 ~ (master)
+$ cat suchi.txt
+hii suchi
+how are you
+
+virit@lenovo MINGW64 ~ (master)
+$ vi file.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ cat file.sh
+#!/bin/bash
+echo " enter filename to remove"
+read fn
+rm -i $fn
+
+virit@lenovo MINGW64 ~ (master)
+$ chmod u+x file.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ ./file.sh
+ enter filename to remove
+suchi.txt
+rm: remove regular file 'suchi.txt'? y
+
+virit@lenovo MINGW64 ~ (master)
+$ cat suchi.txt
+cat: suchi.txt: No such file or directory
+
+APPEND FILE
+
+virit@lenovo MINGW64 ~ (master)
+$ vi file5.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ cat basu.txt
+ hi my name is viritha how are you
+
+virit@lenovo MINGW64 ~ (master)
+$ cat file5.sh
+#!/bin/bash
+echo "before appending the file"
+cat basu.txt
+echo "basu is my brother" >> basu.txt
+echo "after appending the file"
+cat basu.txt
+
+virit@lenovo MINGW64 ~ (master)
+$ chmod u+x file5.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ ./file5.sh
+before appending the file
+ hi my name is viritha how are you
+after appending the file
+ hi my name is viritha how are you
+basu is my brother

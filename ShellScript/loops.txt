@@ -1,0 +1,50 @@
+                                                  LOOPING STATEMENTS
+WHILE LOOP EXAMPLE
+
+virit@lenovo MINGW64 ~ (master)
+$ vi loop1.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ cat loop1.sh
+#!/bin/bash
+valid=true
+count=1
+while [ $valid ]
+do
+echo $count
+if [ $count -eq 5 ];
+then
+break
+fi
+ ((count++))
+done
+
+virit@lenovo MINGW64 ~ (master)
+$ chmod u+x loop1.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ ./loop1.sh
+1
+2
+3
+4
+5
+                                       FOR LOOP
+virit@lenovo MINGW64 ~ (master)
+$ VI LOOP2.SH
+
+virit@lenovo MINGW64 ~ (master)
+$ CAT LOOP2.SH
+#!/bin/bash
+for (( counter=10; counter>0; counter-- ))
+do
+echo -n "$counter "
+done
+printf "\n"
+
+virit@lenovo MINGW64 ~ (master)
+$ chmod u+x LOOP2.SH
+
+virit@lenovo MINGW64 ~ (master)
+$ ./LOOP2.SH
+10 9 8 7 6 5 4 3 2 1

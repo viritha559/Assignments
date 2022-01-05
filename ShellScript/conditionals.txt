@@ -1,0 +1,72 @@
+                                               CONDITIONAL STATEMENTS
+IMPLEMEMTING IF 
+
+virit@lenovo MINGW64 ~ (master)
+$ vi if.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ cat if.sh
+a=10
+b=20
+if [ $a == $b ]
+then
+    echo "a is equal to b"
+fi
+if [ $a != $b ]
+then
+    echo "a is not equal to b"
+fi
+
+virit@lenovo MINGW64 ~ (master)
+$ chmod u+x if.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ ./if.sh
+a is not equal to b
+ 
+IF ELSE
+
+virit@lenovo MINGW64 ~ (master)
+$ vi ifelse.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ cat ifelse.sh
+#!/bin/bash
+a=20
+b=20
+if [ $a == $b ]
+then
+    echo "a is equal to b"
+else
+    echo "a is not equal to b"
+fi
+
+virit@lenovo MINGW64 ~ (master)
+$ chmod u+x ifelse.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ ./ifelse.sh
+a is equal to b
+ 
+SWITCH 
+
+
+virit@lenovo MINGW64 ~ (master)
+$ vi switch.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ cat switch.sh
+#!/bin/bash
+cars="bmw"
+case "$cars" in
+"mercedes") echo "headquaters - affalterbach, germany" ;;
+"audi") echo "headquaters - ingolstadt, germany" ;;
+"bmw") echo "headquaters -chennai, tamil nadu, india" ;;
+esac
+
+virit@lenovo MINGW64 ~ (master)
+$ chmod u+x switch.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ ./switch.sh
+headquaters -chennai, tamil nadu, india

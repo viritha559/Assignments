@@ -1,0 +1,46 @@
+                                      FUNCTIONS
+CREATING A FUNCTION
+
+
+virit@lenovo MINGW64 ~ (master)
+$ vi function1.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ cat function1.sh
+#!/bin/bash
+function F1()
+{
+echo ' i like bash programming '
+}
+F1
+
+virit@lenovo MINGW64 ~ (master)
+$ chmod u+x function1.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ ./function1.sh
+ i like bash programming
+
+CREATE FUNCTION WITH PARAMETERS
+
+virit@lenovo MINGW64 ~ (master)
+$ vi function2.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ cat function2.sh
+#!/bin/bash
+
+rectangle_area()
+{
+area=$(($1 * $2))
+echo "area is : $area"
+}
+
+rectangle_area 10 20
+
+virit@lenovo MINGW64 ~ (master)
+$ chmod u+x function2.sh
+
+virit@lenovo MINGW64 ~ (master)
+$ ./function2.sh
+area is : 200
