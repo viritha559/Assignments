@@ -1,0 +1,14 @@
+fooaaaabar
+fooabar
+foobar
+fooaabar
+fooxxxbar
+fooxbar
+baryfoo
+fooxybar
+foocbar
+x#y
+x:y
+x^y
+x&y
+x%y
