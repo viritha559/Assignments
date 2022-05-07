@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table,tr,td{
+             border-bottom: 1px solid black; 
+            border-collapse:"collapse";
+            line-height:30px;
+            font-size:12px;
+            padding:20px;
+            
+        }
+        .col1{
+            text-align:left;
+            width:10%;
+        }
+        .col2{
+            text-align:center;
+            width:30%;
+        }
+        .col3{
+            text-align:right;
+            width:40%
+        }
+        .col4{
+            text-align:right;
+            width:40%
+        }
+        .col5{
+            text-align:right;
+            width:40%
+        }
+        td:nth-child(odd){         /* for column */
+            background-color:lightcoral;
+          /*  background-image:linear-gradient(pink,green,voilet,purple); */
+        }
+        th{
+            background-color:orange;
+        }
+        tr:nth-child(even){         /* for row */
+            background-color:lightcyan;
+        }
+        tr:hover{
+            background-color:black;
+            color:white;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    
+<table>
+    <tr>
+        <th class="col1">S.No</th>
+        <th class="col2">Dept</th>
+        <th class="col3">Student Name</th>
+        <th class="col4">Marks1</th>
+        <th class="col5">Marks2</th>
+    </tr>
+    <tr>
+        <td class="col1">1</td>
+        <td  rowspan="2" class="col2">cse</td>
+        <td class="col3">viritha</td>
+        <td colspan="2" rowspan="1" class="col4">80</td>
+        
+    </tr>
+    <tr>
+        <td class="col1">2</td>
+        <td class="col3">suchithra</td>
+        <td class="col4">97</td>
+        <td class="col5">90</td>
+
+    </tr>
+    <tr>
+        <td class="col1">3</td>
+        <td class="col2">ece</td>
+        <td class="col3">shreya</td>
+        <td class="col4">88</td>
+        <td class="col5">80</td>
+
+    </tr>
+    <tr>
+        <td class="col1">4</td>
+        <td class="col2">eee</td>
+        <td class="col3">sindhu</td>
+        <td class="col4">88</td>
+        <td class="col5">98</td>
+
+    </tr>
+</table>
+
+</body>
+</html>

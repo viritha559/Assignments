@@ -1,0 +1,8 @@
+button{                
+    border-color:blueviolet;
+    background-color:indianred;
+    color:black;
+    cursor:pointer;
+    border-radius:5px;
+    border-radius:50%;
+}
